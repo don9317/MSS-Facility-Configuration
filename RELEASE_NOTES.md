@@ -1,6 +1,13 @@
-# MSS Utilization Dashboard v1.12 Release Notes
+# Release Notes — v1.0
 
-- Added an overall utilization-by-month line chart for directional trend analysis.
-- Updated the Spaces dropdown so multiple checkboxes can be changed before clicking **Done**.
-- Added `facility_setup_template.mss` for creating separate facility profiles.
-- Retains the v1.11 physical-asset utilization engine and the complete v1.10 dashboard feature set.
+- Standalone MSS Facility Configuration Wizard
+- Facility identity and contact fields
+- Seven-day operating-hours editor
+- Reusable parent/child and alternate-label space families
+- Single-asset and independent-child capacity rules
+- Duplicate-label and operating-hours validation
+- Import existing `.mss` or legacy setup files
+- Export facility-specific `.mss` files
+- Browser save/load
+- TM Fieldhouse starter and The HIVE example
+- Clickable information bubbles

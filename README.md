@@ -1,18 +1,21 @@
-# MSS Utilization Dashboard v1.12
+# MSS Facility Configuration Wizard v1.0
 
-## Included files
-- `index.html` — GitHub Pages dashboard
-- `facility_setup_template.mss` — editable template for each facility
-- `README.md` — setup instructions
-- `RELEASE_NOTES.md` — version changes
+Standalone GitHub Pages application for creating reusable `.mss` facility setup files.
 
-## Facility setup workflow
-1. Copy `facility_setup_template.mss`.
-2. Rename it for the facility, such as `hive-setup.mss`.
-3. Open the copy in Notepad and change the facility name, operating hours, and parent/child space families.
-4. In the dashboard, use **Load Facility Setup File**.
-5. The easier alternative is to open **Space Setup**, configure the facility, and click **Export Setup**.
+## Publish on GitHub Pages
 
-### Family modes
-- `singleUnit`: the parent and all children represent one physical rentable asset. Example: Court 1 / Court 1 West / Court 1 East.
-- `childUnits`: the parent blocks all children, but children may count as separate rentable units when the parent is not rented. Example: Full Field / tunnels / Practice Turf.
+1. Upload all files in this folder to the root of the `MSS-Facility-Configuration` repository.
+2. In GitHub, open **Settings → Pages**.
+3. Select **Deploy from a branch**, branch **main**, folder **/(root)**.
+4. Open the GitHub Pages link after deployment completes.
+
+## Main workflow
+
+1. Enter facility information.
+2. Confirm operating hours.
+3. Add space families and exact MSS booking labels.
+4. Validate the setup.
+5. Export a facility-specific `.mss` file.
+6. Load that file through the MSS Utilization Dashboard.
+
+The `.mss` file is JSON data with a custom extension. It is not intended to be opened directly by Windows.
