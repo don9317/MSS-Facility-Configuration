@@ -1,127 +1,125 @@
 {
-  "schema": "mss-facility-configuration",
-  "schemaVersion": "1.0",
+  "schemaVersion": "2.0",
   "facility": {
     "name": "TM Fieldhouse",
     "id": "tm-fieldhouse",
-    "timeZone": "America/Chicago",
     "address": "",
     "city": "Lee's Summit",
     "state": "MO",
     "zip": "",
-    "contactName": "",
-    "contactEmail": "",
-    "notes": "Starter setup. Confirm exact operating hours and booking labels before distribution."
+    "timeZone": "America/Chicago",
+    "contact": {
+      "name": "",
+      "email": "",
+      "phone": ""
+    }
   },
   "operatingHours": {
-    "sunday": {
+    "Monday": {
+      "open": true,
+      "start": "09:00",
+      "end": "21:00"
+    },
+    "Tuesday": {
+      "open": true,
+      "start": "09:00",
+      "end": "21:00"
+    },
+    "Wednesday": {
+      "open": true,
+      "start": "09:00",
+      "end": "21:00"
+    },
+    "Thursday": {
+      "open": true,
+      "start": "09:00",
+      "end": "21:00"
+    },
+    "Friday": {
+      "open": true,
+      "start": "09:00",
+      "end": "21:00"
+    },
+    "Saturday": {
+      "open": true,
+      "start": "09:30",
+      "end": "21:00"
+    },
+    "Sunday": {
       "open": true,
       "start": "09:30",
       "end": "19:00"
-    },
-    "monday": {
-      "open": true,
-      "start": "09:00",
-      "end": "21:00"
-    },
-    "tuesday": {
-      "open": true,
-      "start": "09:00",
-      "end": "21:00"
-    },
-    "wednesday": {
-      "open": true,
-      "start": "09:00",
-      "end": "21:00"
-    },
-    "thursday": {
-      "open": true,
-      "start": "09:00",
-      "end": "21:00"
-    },
-    "friday": {
-      "open": true,
-      "start": "09:00",
-      "end": "21:00"
-    },
-    "saturday": {
-      "open": true,
-      "start": "09:30",
-      "end": "21:00"
     }
   },
+  "sports": [
+    "Basketball",
+    "Baseball",
+    "Softball",
+    "Training",
+    "Camps"
+  ],
+  "customSports": [],
   "spaceFamilies": [
     {
       "id": "court-1",
-      "name": "Court 1 Family",
+      "name": "Court 1",
       "sport": "Basketball",
-      "rule": "singleAsset",
-      "parent": "Court 1",
+      "rule": "single_asset",
+      "capacity": 1,
       "labels": [
+        "Court 1",
         "Court 1a",
         "Court 1b",
-        "Court 1c",
-        "Court 1 A",
-        "Court 1 B",
-        "Court 1 C"
-      ],
-      "active": true
+        "Court 1c"
+      ]
     },
     {
       "id": "court-2",
-      "name": "Court 2 Family",
+      "name": "Court 2",
       "sport": "Basketball",
-      "rule": "singleAsset",
-      "parent": "Court 2",
+      "rule": "single_asset",
+      "capacity": 1,
       "labels": [
+        "Court 2",
         "Court 2a",
         "Court 2b",
-        "Court 2c",
-        "Court 2 A",
-        "Court 2 B",
-        "Court 2 C"
-      ],
-      "active": true
+        "Court 2c"
+      ]
     },
     {
       "id": "court-3",
-      "name": "Court 3 Family",
+      "name": "Court 3",
       "sport": "Basketball",
-      "rule": "singleAsset",
-      "parent": "Court 3",
+      "rule": "single_asset",
+      "capacity": 1,
       "labels": [
+        "Court 3",
         "Court 3a",
         "Court 3b",
-        "Court 3c",
-        "Court 3 A",
-        "Court 3 B",
-        "Court 3 C"
-      ],
-      "active": true
+        "Court 3c"
+      ]
     },
     {
       "id": "court-4",
-      "name": "Court 4 Family",
+      "name": "Court 4",
       "sport": "Basketball",
-      "rule": "singleAsset",
-      "parent": "Court 4",
+      "rule": "single_asset",
+      "capacity": 1,
       "labels": [
+        "Court 4",
         "Court 4a",
         "Court 4b",
-        "Court 4c",
-        "Court 4 A",
-        "Court 4 B",
-        "Court 4 C"
-      ],
-      "active": true
+        "Court 4c"
+      ]
     },
     {
       "id": "full-field",
-      "name": "Full Field Family",
+      "name": "Full Field",
       "sport": "Baseball/Softball",
-      "rule": "independentChildren",
-      "parent": "Full Field",
+      "rule": "parent_blocks_children",
+      "capacity": 8,
       "labels": [
+        "Full Field",
         "Tunnel 1",
         "Tunnel 2",
         "Tunnel 3",
@@ -130,12 +128,18 @@
         "Tunnel 6",
         "Tunnel 7",
         "Practice Turf"
-      ],
-      "active": true
+      ]
     }
   ],
-  "metadata": {
-    "createdBy": "MSS Facility Configuration Wizard",
-    "updatedAt": "2026-07-29T00:00:00.000Z"
-  }
+  "branding": {
+    "logoUrl": "",
+    "accentColor": "#1956a3"
+  },
+  "defaults": {
+    "reportStart": "09:00",
+    "reportEnd": "21:00",
+    "internalBookingValue": 0
+  },
+  "notes": "Starter only. Confirm TM operating hours and exact booking labels.",
+  "metadata": {}
 }

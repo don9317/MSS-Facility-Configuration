@@ -1,13 +1,11 @@
-# Release Notes — v1.0
-
-- Standalone MSS Facility Configuration Wizard
-- Facility identity and contact fields
-- Seven-day operating-hours editor
-- Reusable parent/child and alternate-label space families
-- Single-asset and independent-child capacity rules
-- Duplicate-label and operating-hours validation
-- Import existing `.mss` or legacy setup files
-- Export facility-specific `.mss` files
-- Browser save/load
-- TM Fieldhouse starter and The HIVE example
+# Release Notes — v2.0
+- Complete create/load/edit/save/export workflow
+- Facility information and contacts
+- Weekly operating hours
+- Sports and offerings
+- Space families and parent/child capacity rules
+- Validation for missing fields, invalid hours, and duplicate labels
+- Browser storage
+- JSON preview
+- TM Fieldhouse and HIVE starter configurations
 - Clickable information bubbles
